@@ -1,0 +1,17 @@
+header {
+  width: 100vw;
+  height: 60px;
+  background-color: $header_color;
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 55px;
+    img {
+
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+}

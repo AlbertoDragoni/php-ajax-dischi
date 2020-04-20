@@ -1,0 +1,13 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Comic Neue', cursive;
+}
+body {
+  background-color: $container_color;
+  .container-fullwidth {
+    width: 100vw;
+    height: 1000px;
+  }
+}

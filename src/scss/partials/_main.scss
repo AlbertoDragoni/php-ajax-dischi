@@ -9,6 +9,10 @@ main {
     height: 320px;
     color: $font_color;
     background-color: $header_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     .album-img {
       width: 80%;
       img {

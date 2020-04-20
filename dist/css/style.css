@@ -45,6 +45,10 @@ main .card {
   height: 320px;
   color: #03dac6;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 main .card .album-img {

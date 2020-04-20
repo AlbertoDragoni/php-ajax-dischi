@@ -7,6 +7,13 @@ main {
   .card {
     width: 20%;
     height: 320px;
+    color: $font_color;
     background-color: $header_color;
+    .album-img {
+      width: 80%;
+      img {
+        width: 100%;
+      }
+    }
   }
 }

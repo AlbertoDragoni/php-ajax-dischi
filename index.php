@@ -21,7 +21,9 @@
               include 'data.php';
              ?>
              <?php foreach ($albums as $key => $album){ ?>
-
+               <p><?php echo $album['albumtitle'] ?></p>
+               <p><?php echo $album['artistname'] ?></p>
+               <p><?php echo $album['year'] ?></p>
              <?php } ?>
 
           </div>

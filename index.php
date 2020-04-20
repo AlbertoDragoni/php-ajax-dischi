@@ -17,7 +17,13 @@
       <div class="container-fullwidth">
         <main>
           <div class="card">
-          
+            <?php
+              include 'data.php';
+             ?>
+             <?php foreach ($albums as $key => $album){ ?>
+
+             <?php } ?>
+
           </div>
         </main>
       </div>

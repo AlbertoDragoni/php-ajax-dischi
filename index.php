@@ -16,21 +16,21 @@
     </header>
       <div class="container-fullwidth">
         <main>
-          <div class="card">
             <?php
               include 'data.php';
              ?>
              <?php foreach ($albums as $key => $album){ ?>
-                <div class="album-img">
-                   <img src="<?php echo $album['img'] ?>" alt="">
+                <div class="card">
+                    <div class="album-img">
+                       <img src="<?php echo $album['img'] ?>" alt="">
+                    </div>
+                   <div class="descrizione">
+                     <p><?php echo $album['albumtitle'] ?></p>
+                     <p><?php echo $album['artistname'] ?></p>
+                     <p><?php echo $album['year'] ?></p>
+                   </div>
                 </div>
-               <div class="descrizione">
-                 <p><?php echo $album['albumtitle'] ?></p>
-                 <p><?php echo $album['artistname'] ?></p>
-                 <p><?php echo $album['year'] ?></p>
-               </div>
              <?php } ?>
-          </div>
         </main>
       </div>
   <script src="dist/js/main.js" charset="utf-8"></script>

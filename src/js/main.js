@@ -1,4 +1,9 @@
 $(document).ready(function (){
+
+  var source = $('#entry-template').html();
+  var template = Handlebars.compile(source);
+
+
   $.ajax({
     url: 'server.php',
     method: 'GET',
@@ -7,17 +12,19 @@ $(document).ready(function (){
       var albums = data;
       for (var i = 0; i < albums.length; i++) {
         var album = albums[i];
-        $('main .card').append('<p>' + album.img + '</p>');
-        $('main .card').append('<p>' + album.albumtitle + '</p>');
-        $('main .card').append('<p>' + album.artistname + '</p>');
-        $('main .card').append('<p>' + album.year + '</p>');
+        var albumTemplate = {
+          albumCover: album.img,
+          albumtitle: album.albumtitle,
+          artistname: album.artistname,
+          year: album.year
+        };
+        var html = template(albumTemplate);
+        $('main').append(html);
       };
     },
     error: function(error){
       alert ('hai sbagliato');
     }
-
-
 
   });
 

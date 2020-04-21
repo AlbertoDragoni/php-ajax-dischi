@@ -16,9 +16,7 @@
     </header>
       <div class="container-fullwidth">
         <main>
-
-
-
+          
         </main>
       </div>
       <!-- script di handlebars -->
@@ -26,14 +24,14 @@
         <script id="entry-template" type="text/x-handlebars-template">
           <div class="card">
             <div class="album-img">
-                <img src="{{albumCover}}" alt="">
-              </div>
-              <div class="descrizione">
-                <p>{{albumtitle}}</p>
-                <p>{{artistname}}</p>
-                <p>{{year}}</p>
-              </div>
-            </div>  
+              <img src="{{albumCover}}" alt="">
+            </div>
+            <div class="descrizione">
+              <p>{{albumtitle}}</p>
+              <p>{{artistname}}</p>
+              <p>{{year}}</p>
+            </div>
+          </div>
         </script>
 
   <script src="dist/js/main.js" charset="utf-8"></script>
